@@ -1,33 +1,27 @@
-import { useRef } from "react";
+import { useEffect, useState } from "react";
 import { sliderMock } from "./mock";
-import Slider from "react-slick";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function HomeSlider() {
-  const sliderRef = useRef<Slider | null>(null);
-  const settings = {
-    dots: true,
-    infinite: true,
-    arrows: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   const images = sliderMock.map((image) => (
-    <div className="w-full max-w-[90rem] mx-auto  lg:h-[37.5rem] relative">
+    <div className="relative flex flex-shrink-0 w-full h-full">
       <img
         src={image.mobileImg}
         alt="mobile"
-        className="flex md:hidden w-full object-cover"
+        className="flex md:hidden w-full h-full object-cover"
       />
       <img
         src={image.desktopImg}
         alt="mobile"
-        className="hidden md:flex w-full object-cover"
+        className="hidden md:flex w-full h-full object-cover"
       />
 
       {image.hasCta && (
-        <div className=" text-primary-white absolute z-10 flex flex-col w-[14.68rem] lg:w-[29.375rem] top-[4rem] lg:top-[6rem] left-[5rem] lg:left-[17rem] items-start gap-2">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-2 max-w-[11rem] lg:max-w-none">
+        <div className=" text-primary-white absolute z-10 flex flex-col w-[14.68rem] lg:w-[29.375rem] top-[4rem] lg:top-[9rem] left-[5rem] lg:left-[17rem] xl:left-[26rem] items-start gap-2 lg:gap-5">
+          <h1 className="text-3xl lg:text-4xl font-bold mb-2 lg:mb-6 max-w-[11rem] lg:max-w-none">
             {image.cta.title}
           </h1>
           <h2 className="text-sm lg:text-xl">{image.cta.subtitle}</h2>
@@ -39,14 +33,46 @@ export default function HomeSlider() {
     </div>
   ));
 
+  useEffect(()=>{
+   
+    const slideInterval = setInterval(nextSlide ,5000)
+
+    return () => clearInterval(slideInterval)
+  })
+
+  const prevSlide = () =>
+    setCurrentSlide((curr) => (curr === 0 ? images.length - 1 : curr - 1));
+  const nextSlide = () =>
+    setCurrentSlide((curr) => (curr === images.length - 1 ? 0 : curr + 1));
+
   return (
-    <div className="">
-      <Slider {...settings} ref={sliderRef}>
-<p>dffsdf</p>
-<p>dffsdf</p>
-<p>dffsdf</p>
-<p>dffsdf</p>
-        </Slider>
+    <div className="w-full max-w-[200rem] mx-auto  overflow-hidden relative">
+      <div
+        className="flex transition-transform ease-in-out duration-300"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
+        {images}
+      </div>
+      <div className="absolute inset-0 flex items-center justify-between mx-auto w-full max-w-[80%] text-primary-gray">
+        <button onClick={prevSlide}>
+          <FaChevronLeft size={30} />
+        </button>
+        <button onClick={nextSlide}>
+          <FaChevronRight size={30} />
+        </button>
+      </div>
+      <div className="absolute bottom-4 md:bottom-6 lg:bottom-5 right-0 left-0">
+        <div className="flex items-center justify-center gap-4">
+          {images.map((_, i) => (
+            <div
+              className={`transition-all w-2 h-2 lg:w-4 lg:h-4 border-[1px] border-primary-yellow rounded-full ${
+                i === currentSlide && "bg-primary-yellow"
+              }`}
+              onClick={() => setCurrentSlide(i)}
+            ></div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
