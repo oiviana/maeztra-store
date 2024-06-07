@@ -1,15 +1,15 @@
 import LogoHeader from "../../icons/LogoHeader";
-import AccountButton from "../Account/AccountButton";
-import DesktopMenu from "../Menu/DesktopMenu";
-import MobileMenu from "../Menu/MobileMenu";
-import MiniCart from "../MiniCart";
-import Search from "../Search";
+import AccountButton from "../../sections/Account/AccountButton";
+import DesktopMenu from "../../sections/Menu/DesktopMenu";
+import MobileMenu from "../../sections/Menu/MobileMenu";
+import MiniCart from "../../sections/MiniCart";
+import Search from "../../sections/Search";
 
-import WishListButton from "../WishList";
+import WishListButton from "../../sections/WishList";
 
 export default function Header() {
   return (
-    <header>
+    <header className="sticky z-50 w-full bg-primary-white lg:relative">
       <div className="flex flex-col lg:hidden relative">
         <div className="flex h-[5.5rem] w-full items-center justify-between px-4 shadow-lg">
           <div className="flex items-center gap-4">

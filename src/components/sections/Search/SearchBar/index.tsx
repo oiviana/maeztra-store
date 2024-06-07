@@ -18,7 +18,7 @@ export default function SearchBar() {
             placeholder="O que você busca?"
             className="w-full rounded-lg px-5 bg-tertiary-white placeholder-primary-gray text-xs"
           />
-          <button className=" bg-primary-yellow text-primary-white w-[7.438rem] h-10 flex justify-center items-center rounded-lg absolute right-0 text-sm">
+          <button className=" bg-primary-yellow text-primary-white w-[6rem] lg:w-[7.438rem] h-10 flex justify-center items-center rounded-lg absolute right-0 text-sm">
             {" "}
             Buscar
           </button>
