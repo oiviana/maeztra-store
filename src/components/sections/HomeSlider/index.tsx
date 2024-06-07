@@ -6,8 +6,8 @@ import { FaChevronRight } from "react-icons/fa";
 export default function HomeSlider() {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-  const images = sliderMock.map((image) => (
-    <div className="relative flex flex-shrink-0 w-full h-full">
+  const images = sliderMock.map((image, index) => (
+    <div className="relative flex flex-shrink-0 w-full h-full" key={index}>
       <img
         src={image.mobileImg}
         alt="mobile"
@@ -20,8 +20,8 @@ export default function HomeSlider() {
       />
 
       {image.hasCta && (
-        <div className=" text-primary-white absolute z-10 flex flex-col w-[14.68rem] lg:w-[29.375rem] top-[4rem] lg:top-[9rem] left-[5rem] lg:left-[17rem] xl:left-[26rem] items-start gap-2 lg:gap-5">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-2 lg:mb-6 max-w-[11rem] lg:max-w-none">
+        <div className=" text-primary-white absolute z-10 flex flex-col w-[14.68rem] lg:w-[29.375rem] top-[4rem] lg:top-[9rem] left-[5rem] lg:left-[17rem] xl:left-[26rem] items-start gap-5 font-montserrat">
+          <h1 className="text-3xl lg:text-4xl font-bold mb-6 max-w-[11rem] lg:max-w-none">
             {image.cta.title}
           </h1>
           <h2 className="text-sm lg:text-xl">{image.cta.subtitle}</h2>
@@ -33,17 +33,16 @@ export default function HomeSlider() {
     </div>
   ));
 
-  useEffect(()=>{
-   
-    const slideInterval = setInterval(nextSlide ,5000)
-
-    return () => clearInterval(slideInterval)
-  })
-
   const prevSlide = () =>
     setCurrentSlide((curr) => (curr === 0 ? images.length - 1 : curr - 1));
   const nextSlide = () =>
     setCurrentSlide((curr) => (curr === images.length - 1 ? 0 : curr + 1));
+
+  useEffect(() => {
+    const slideInterval = setInterval(nextSlide, 5000);
+
+    return () => clearInterval(slideInterval);
+  });
 
   return (
     <div className="w-full max-w-[200rem] mx-auto  overflow-hidden relative">
@@ -69,6 +68,7 @@ export default function HomeSlider() {
                 i === currentSlide && "bg-primary-yellow"
               }`}
               onClick={() => setCurrentSlide(i)}
+              key={i}
             ></div>
           ))}
         </div>

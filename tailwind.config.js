@@ -18,6 +18,7 @@ export default {
     },
     fontFamily: {
       titillium: ["Titillium Web", "sans-serif"],
+      montserrat: ["Montserrat", "Titillium Web"],
     }
   },
   plugins: [],
