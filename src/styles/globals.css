@@ -16,3 +16,6 @@
     font-family:"Titillium Web", "sans-serif";
   }
   
+  input:active, input:focus{
+    border: 1px solid #FAA500
+  }
