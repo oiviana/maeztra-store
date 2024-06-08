@@ -1,11 +1,16 @@
-import Collection from "../../sections/Collection";
+import Advantages from "../../sections/Advantages";
+import Brands from "../../sections/Brands";
+// import Collection from "../../sections/Collection";
 import HomeSlider from "../../sections/HomeSlider";
+import Newsletter from "../../sections/Newsletter";
 
 export default function Main() {
   return (
-    <main>
+    <main className="">
       <HomeSlider />
-      <Collection />
+      <Advantages/>
+      <Brands/>
+      <Newsletter/>
     </main>
   );
 }
