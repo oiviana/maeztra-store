@@ -20,12 +20,12 @@ export default function HomeSlider() {
       />
 
       {image.hasCta && (
-        <div className=" text-primary-white absolute z-10 flex flex-col w-[14.68rem] lg:w-[29.375rem] top-[4rem] lg:top-[9rem] left-[5rem] lg:left-[17rem] xl:left-[26rem] items-start gap-5 font-montserrat">
+        <div className="z-[999] text-primary-white absolute flex flex-col w-[14.68rem] lg:w-[29.375rem] top-[4rem] lg:top-[9rem] left-[5rem] lg:left-[17rem] xl:left-[26rem] items-start gap-5 font-montserrat">
           <h1 className="text-3xl lg:text-4xl font-bold mb-6 max-w-[11rem] lg:max-w-none">
             {image.cta.title}
           </h1>
           <h2 className="text-sm lg:text-xl">{image.cta.subtitle}</h2>
-          <button className="w-[4.75rem] h-[1.75rem] lg:w-32 lg:h-12 text-sm lg:text-base bg-primary-yellow flex justify-center items-center font-bold rounded-lg">
+          <button className="w-[4.75rem] h-[1.75rem] lg:w-32 cursor-pointer lg:h-12 text-sm lg:text-base bg-primary-yellow flex justify-center items-center font-bold rounded-lg">
             {image.cta.buttonText}
           </button>
         </div>
@@ -64,7 +64,7 @@ export default function HomeSlider() {
         <div className="flex items-center justify-center gap-4">
           {images.map((_, i) => (
             <div
-              className={`transition-all w-2 h-2 lg:w-4 lg:h-4 border-[1px] border-primary-yellow rounded-full ${
+              className={`transition-all w-2 h-2 lg:w-4 lg:h-4 border-[1px] border-primary-yellow rounded-full cursor-pointer ${
                 i === currentSlide && "bg-primary-yellow"
               }`}
               onClick={() => setCurrentSlide(i)}
