@@ -52,7 +52,7 @@ export default function HomeSlider() {
       >
         {images}
       </div>
-      <div className="absolute inset-0 flex items-center justify-between mx-auto w-full max-w-[80%] text-primary-gray">
+      <div className="absolute inset-0 flex items-center justify-between mx-auto w-full max-w-[64%] text-primary-gray">
         <button onClick={prevSlide}>
           <FaChevronLeft size={30} />
         </button>
