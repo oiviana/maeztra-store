@@ -1,4 +1,3 @@
-import LogoHeader from "../../icons/LogoHeader";
 import AccountButton from "../../sections/Account/AccountButton";
 import DesktopMenu from "../../sections/Menu/DesktopMenu";
 import MobileMenu from "../../sections/Menu/MobileMenu";
@@ -14,7 +13,9 @@ export default function Header() {
         <div className="flex h-[5.5rem] w-full items-center justify-between px-4 shadow-lg">
           <div className="flex items-center gap-4">
             <MobileMenu />
-            <LogoHeader width={110} height={12} />
+            <div className="w-[110px] ">
+              <img src="/images/icons/logo-maeztra.svg" alt="Logo"/>
+            </div>
           </div>
           <div className="flex items-center gap-10">
             <MiniCart />
@@ -26,7 +27,9 @@ export default function Header() {
       <div className="hidden lg:flex flex-col">
         <div className=" h-[5.5rem] w-full shadow px-2 flex items-center">
           <div className="w-full max-w-[100rem]  mx-auto flex justify-between items-center">
-            <div className="w-[147px] ">Logo</div>
+            <div className="w-[147px] ">
+              <img src="/images/icons/logo-maeztra.svg" alt="Logo"/>
+            </div>
             <Search />
             <div className="flex">
               <WishListButton />
