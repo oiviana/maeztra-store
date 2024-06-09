@@ -18,6 +18,13 @@ export default function ProductCard({
   productName,
   sku,
 }: ProductProps) {
+  
+  const formattedPrice = new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+}).format(price);
+
+
   return (
     <div className="flex flex-col w-[308px] h-[600px]">
       <div className="w-full h-[380px] overflow-hidden">
@@ -29,7 +36,7 @@ export default function ProductCard({
             <img src={item?.src} alt={item?.color} />
           ))}
         </div>
-        <span className="text-primary-gray font-bold text-xl">{price}</span>
+        <span className="text-primary-gray font-bold text-xl">{formattedPrice}</span>
         <h3 className="text-base">{productName}</h3>
         <p className="text-xs max-w-[220px] h-[48px]: overflow-hidden text-ellipsis line-clamp-[3]">
           {productDescription}

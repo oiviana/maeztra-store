@@ -9,7 +9,10 @@ interface ArrowProps {
 function CustomPrevArrow(props: ArrowProps) {
   const { onClick } = props;
   return (
-    <button className="absolute left-1 bottom-[18rem] z-10 hidden lg:block" onClick={onClick}>
+    <button
+      className="absolute left-1 bottom-[18rem] z-10 hidden lg:block"
+      onClick={onClick}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -29,7 +32,10 @@ function CustomPrevArrow(props: ArrowProps) {
 function CustomNextArrow(props: ArrowProps) {
   const { onClick } = props;
   return (
-    <button className="absolute right-3 bottom-[18rem] z-10 hidden lg:block" onClick={onClick}>
+    <button
+      className="absolute right-3 bottom-[18rem] z-10 hidden lg:block"
+      onClick={onClick}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -114,7 +120,9 @@ export default function ProductShelf() {
   ));
   return (
     <div className="flex flex-col w-full max-w-[100rem] mx-auto relative px-1 lg:px-0">
-      <h2 className="text-primary-gray font-bold mx-auto my-4 lg:text-[32px]">As Mais Pedidas</h2>
+      <h2 className="text-primary-gray font-bold mx-auto my-4 lg:text-[32px/]">
+        As Mais Pedidas
+      </h2>
       <Slider {...sliderSettings}>{productsShelf}</Slider>
     </div>
   );
