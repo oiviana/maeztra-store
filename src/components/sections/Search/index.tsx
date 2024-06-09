@@ -15,7 +15,7 @@ export default function Search() {
       >
         <GoSearch size={30} />
       </button>
-      <div className={`${showSearchBar ? "flex" : "hidden"} w-full`}>
+      <div className={`${showSearchBar ? "flex" : "hidden"} w-full lg:flex`}>
         <SearchBar/>
         <button
           className="flex items-center lg:hidden"
