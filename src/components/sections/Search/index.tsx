@@ -5,7 +5,7 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 
 export default function Search() {
-  const [showSearchBar, setShowSearchBar] = useState<boolean>(true);
+  const [showSearchBar, setShowSearchBar] = useState<boolean>(false);
 
   return (
     <div className="flex px-2 lg:px-0  w-full lg:max-w-[49.438rem]">
