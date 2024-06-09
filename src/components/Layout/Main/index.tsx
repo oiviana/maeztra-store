@@ -1,16 +1,19 @@
 import Advantages from "../../sections/Advantages";
 import Brands from "../../sections/Brands";
-// import Collection from "../../sections/Collection";
+import Collection from "../../sections/Collection";
 import HomeSlider from "../../sections/HomeSlider";
 import Newsletter from "../../sections/Newsletter";
+import ProductShelf from "../../sections/Product/ProductShelf";
 
 export default function Main() {
   return (
-    <main className="">
+    <main>
       <HomeSlider />
-      <Advantages/>
-      <Brands/>
-      <Newsletter/>
+      <Advantages />
+      <Brands />
+      <ProductShelf />
+      <Collection />
+      <Newsletter />
     </main>
   );
 }
