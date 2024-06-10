@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/oiviana/mks-products/assets/76710272/3a21aa71-ab0c-4ce7-ad2d-079c82e991f9") alt="store Logo"/>
+  <img src="(https://github.com/oiviana/maeztra-store/assets/76710272/80e570d0-b34b-460f-a9ac-dc4bcec75ed8)" alt="store Logo"/>
 </p>
 
 <p align="center">
