@@ -5,7 +5,7 @@ export default function BrandCard({
 
   }) {
     return (
-      <div className="w-[308px] h-[64px]  bg-tertiary-white flex items-center rounded overflow-hidden shadow-sm">
+      <div className="w-[19.25rem] h-16  bg-tertiary-white flex items-center rounded overflow-hidden shadow-sm">
         <img src={image} alt="" className="w-full object-cover" />
       </div>
     );

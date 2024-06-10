@@ -26,8 +26,8 @@ export default function ProductCard({
 
 
   return (
-    <div className="flex flex-col w-[308px] h-[600px]">
-      <div className="w-full h-[380px] overflow-hidden">
+    <div className="flex flex-col w-[19.25rem] h-[37.5rem]">
+      <div className="w-full h-[23.75rem] overflow-hidden">
         <img src={productImg} alt="test" />
       </div>
       <div className="flex flex-1 flex-col w-full  pt-2 px-5 gap-2">
@@ -38,7 +38,7 @@ export default function ProductCard({
         </div>
         <span className="text-primary-gray font-bold text-xl">{formattedPrice}</span>
         <h3 className="text-base">{productName}</h3>
-        <p className="text-xs max-w-[220px] h-[48px]: overflow-hidden text-ellipsis line-clamp-[3]">
+        <p className="text-xs max-w-[13.75rem] h-12 overflow-hidden text-ellipsis line-clamp-[3]">
           {productDescription}
         </p>
         <button className="w-full bg-primary-yellow rounded h-9 text-primary-white">

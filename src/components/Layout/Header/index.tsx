@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex h-[5.5rem] w-full items-center justify-between px-4 shadow-lg">
           <div className="flex items-center gap-4">
             <MobileMenu />
-            <div className="w-[110px] ">
+            <div className="w-[6.875rem] ">
               <img src="/images/icons/logo-maeztra.svg" alt="Logo"/>
             </div>
           </div>
@@ -27,7 +27,7 @@ export default function Header() {
       <div className="hidden lg:flex flex-col">
         <div className=" h-[5.5rem] w-full shadow px-2 flex items-center">
           <div className="w-full max-w-[100rem]  mx-auto flex justify-between items-center">
-            <div className="w-[147px] ">
+            <div className="w-[9.188rem] ">
               <img src="/images/icons/logo-maeztra.svg" alt="Logo"/>
             </div>
             <Search />

@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="w-full flex flex-col">
       <FooterMenu/>
       <div className="bg-primary-gray w-full">
-        <div className="max-w-[100rem] mx-auto px-2 py-6 gap-7 lg:gap-0 h-[233px] lg:h-[85px] text-primary-white flex flex-col  lg:flex-row lg:justify-between items-center">
+        <div className="max-w-[100rem] mx-auto px-2 py-6 gap-7 lg:gap-0 h-[14.563rem] lg:h-[5.313rem] text-primary-white flex flex-col  lg:flex-row lg:justify-between items-center">
           <div className="flex gap-4">
             <ImFacebook2 size={32} />
             <FaLinkedinIn size={32} />
@@ -30,12 +30,12 @@ export default function Footer() {
 
           <div className="flex gap-5">
             <div className="flex flex-col gap-1">
-              <p className="text-[10px]">powered by</p>
+              <p className="text-[0.625rem]">powered by</p>
 
               <VtexIcon />
             </div>
             <div className="flex flex-col gap-1">
-              <p className="text-[10px]">Developed by</p>
+              <p className="text-[0.625rem]">Developed by</p>
               <LogoFooter />
             </div>
           </div>

@@ -5,13 +5,13 @@ export default function Newsletter() {
         <h2 className="text-primary-gray font-bold text-2xl">
           Receba Nossa Newsletter
         </h2>
-        <div className="relative flex justify-center gap-6 w-full max-w-[630px] h-[26px] md:h-10">
+        <div className="relative flex justify-center gap-6 w-full max-w-[39.375rem] h-[1.625rem] md:h-10">
           <input
             type="text"
             placeholder="Digite seu e-mail"
-            className="rounded w-full border-[1px] border-primary-gray md:w-[630px] px-4"
+            className="rounded w-full border-[1px] border-primary-gray md:w-[39.375rem] px-4"
           />
-          <button className="bg-primary-yellow rounded flex h-full justify-center items-center text-sm font-bold w-20 md:w-[132px] text-primary-white md:absolute right-0">
+          <button className="bg-primary-yellow rounded flex h-full justify-center items-center text-sm font-bold w-20 md:w-[8.25rem] text-primary-white md:absolute right-0">
             Enviar
           </button>
         </div>
