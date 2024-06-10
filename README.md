@@ -30,4 +30,4 @@ This project is still under development and will soon have new features!!!
 
 
  # Deploy:
-[maeztra store products by Viana](https://oiviana.github.io/maeztra-store/)
+[maeztra store by Viana](https://oiviana.github.io/maeztra-store/)
