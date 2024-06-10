@@ -52,8 +52,8 @@ export default function Accordion({
                 ${openAccordion ? "h-fit opacity-100" : "h-0 opacity-0"}`}
       >
         <div className="overflow-hidden flex flex-col px-10 gap-2 mb-2">
-          {menuItems?.map((menuItem) => (
-            <a href={menuItem.url}>{menuItem.title}</a>
+          {menuItems?.map((menuItem, index) => (
+            <a href={menuItem.url} key={index}>{menuItem.title}</a>
           ))}
         </div>
       </div>

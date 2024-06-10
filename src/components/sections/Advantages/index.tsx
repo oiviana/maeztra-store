@@ -6,11 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import { sliderSettings } from "./sliderSettings";
 
 export default function Advantages() {
-  const advantageCards = advantagesMock.map((item) => (
+  const advantageCards = advantagesMock.map((item, index) => (
     <AdvantageCard
       title={item.title}
       subtitle={item.subtitle}
       icon={item.img}
+      key={index}
     />
   ));
 

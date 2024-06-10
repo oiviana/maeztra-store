@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 export default function Brands() {
-  const brandCards = brandsMock.map((item) => <BrandCard image={item.img} />);
+  const brandCards = brandsMock.map((item, index) => <BrandCard image={item.img} key={index}/>);
 
   return (
     <div className="overflow-hidden pl-2 flex flex-col gap-4 my-8">
