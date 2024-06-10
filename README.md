@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="https://github.com/oiviana/mks-products/assets/76710272/3a21aa71-ab0c-4ce7-ad2d-079c82e991f9") alt="store Logo"/>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+This is the project created by Lucas Viana for the Maeztra Challenge, it is built primarily in the React ecosystem
+</p>
+<p align="center">
+This project is still under development and will soon have new features!!!
+</p>
 
-Currently, two official plugins are available:
+# How to install the Project?
+- Clone the repo
+- Run **yarn** or **npm** in the root of the project
+- Run **yarn dev** or **npm run dev** 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Stack:
+- Vite
+- Tailwind CSS
+- Typescript
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+ # Evidences:
+ ![image](https://github.com/oiviana/mks-products/assets/76710272/3512cee5-1692-4b6c-9ee5-49852f1736cd)
+ ![image](https://github.com/oiviana/mks-products/assets/76710272/c2e4662b-7440-42f8-854e-5c08c42aede2)
+ ![image](https://github.com/oiviana/mks-products/assets/76710272/1d8f01c6-c384-4f45-baed-449204329c2a)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ # Deploy:
+[maeztra store products by Viana](https://oiviana.github.io/maeztra-store/)
