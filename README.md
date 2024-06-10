@@ -6,6 +6,9 @@
 This is the project created by Lucas Viana for the Maeztra Challenge, it is built primarily in the React ecosystem
 </p>
 <p align="center">
+it is a modern ecommerce website template, offering the main functionalities of a homepage.
+</p>
+<p align="center">
 This project is still under development and will soon have new features!!!
 </p>
 
