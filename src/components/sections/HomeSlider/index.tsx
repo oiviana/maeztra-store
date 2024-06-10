@@ -52,12 +52,12 @@ export default function HomeSlider() {
       >
         {images}
       </div>
-      <div className="absolute inset-0 flex items-center justify-between mx-auto w-full max-w-[64%] text-primary-gray">
+      <div className="absolute z-0 inset-0 flex items-center justify-between mx-auto w-full max-w-[80%] lg:max-w-[65%] text-black lg:text-primary-gray">
         <button onClick={prevSlide}>
-          <FaChevronLeft size={30} />
+          <FaChevronLeft size={25} />
         </button>
         <button onClick={nextSlide}>
-          <FaChevronRight size={30} />
+          <FaChevronRight size={25} />
         </button>
       </div>
       <div className="absolute bottom-4 md:bottom-6 lg:bottom-5 right-0 left-0">
