@@ -9,12 +9,12 @@ export default function HomeSlider() {
   const images = sliderMock.map((image, index) => (
     <div className="relative flex flex-shrink-0 w-full h-full" key={index}>
       <img
-        src={image.mobileImg}
+        src={import.meta.env.BASE_URL+image.mobileImg}
         alt="mobile"
         className="flex md:hidden w-full h-full object-cover"
       />
       <img
-        src={image.desktopImg}
+        src={import.meta.env.BASE_URL+image.desktopImg}
         alt="mobile"
         className="hidden md:flex w-full h-full object-cover"
       />

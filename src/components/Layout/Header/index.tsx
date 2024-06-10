@@ -14,7 +14,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <MobileMenu />
             <div className="w-[6.875rem] ">
-              <img src="/images/icons/logo-maeztra.svg" alt="Logo"/>
+              <img src={`${import.meta.env.BASE_URL}/images/icons/logo-maeztra.svg`} alt="Logo"/>
             </div>
           </div>
           <div className="flex items-center gap-10">
@@ -28,7 +28,7 @@ export default function Header() {
         <div className=" h-[5.5rem] w-full shadow px-2 flex items-center">
           <div className="w-full max-w-[100rem]  mx-auto flex justify-between items-center">
             <div className="w-[9.188rem] ">
-              <img src="/images/icons/logo-maeztra.svg" alt="Logo"/>
+              <img src={`${import.meta.env.BASE_URL}/images/icons/logo-maeztra.svg`} alt="Logo"/>
             </div>
             <Search />
             <div className="flex">

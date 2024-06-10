@@ -28,12 +28,12 @@ export default function ProductCard({
   return (
     <div className="flex flex-col w-[19.25rem] h-[37.5rem]">
       <div className="w-full h-[23.75rem] overflow-hidden">
-        <img src={productImg} alt="test" />
+        <img src={import.meta.env.BASE_URL+productImg} alt="test" />
       </div>
       <div className="flex flex-1 flex-col w-full  pt-2 px-5 gap-2">
         <div className="flex gap-2">
           {sku.map((item, index) => (
-            <img src={item?.src} alt={item?.color} key={index}/>
+            <img src={import.meta.env.BASE_URL+item?.src} alt={item?.color} key={index}/>
           ))}
         </div>
         <span className="text-primary-gray font-bold text-xl">{formattedPrice}</span>

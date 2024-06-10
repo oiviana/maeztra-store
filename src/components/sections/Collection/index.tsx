@@ -14,7 +14,7 @@ export default function Collection() {
 
       <div className="overflow-hidden rounded-md h-[11.5rem] md:h-[18.75rem] lg:h-[30rem] lg:w-[69.625rem]">
         <img
-          src="/images/collection/banner.png"
+          src={`${import.meta.env.BASE_URL}/images/collection/banner.png`}
           className="w-full h-full object-cover"
           alt=""
         />

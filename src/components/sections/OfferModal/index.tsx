@@ -30,7 +30,7 @@ export default function OfferModal() {
         </div>
         <div className="flex">
           <div className="hidden lg:flex">
-            <img src="/images/modal/bg-modal.png" alt="" />
+            <img src={`${import.meta.env.BASE_URL}/images/modal/bg-modal.png`} alt="" />
           </div>
           <div className="bg-primary-white flex flex-1 h-[19.188rem] lg:h-[33.125rem] flex-col justify-center items-center gap-5 px-4 lg:px-0">
             <CiMail size={30} className="text-[#231F20]" />
