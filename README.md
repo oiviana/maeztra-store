@@ -1,7 +1,6 @@
 <p align="center">
   <img src="https://github.com/oiviana/maeztra-store/assets/76710272/7f0c00fb-28ba-48dd-bc1b-aca66b8739c7" alt="store Logo"/>
 </p>
-![Screenshot_2](https://github.com/oiviana/maeztra-store/assets/76710272/7f0c00fb-28ba-48dd-bc1b-aca66b8739c7)
 
 <p align="center">
 This is the project created by Lucas Viana for the Maeztra Challenge, it is built primarily in the React ecosystem
@@ -22,9 +21,9 @@ This project is still under development and will soon have new features!!!
 
 
  # Evidences:
- ![image](https://github.com/oiviana/mks-products/assets/76710272/3512cee5-1692-4b6c-9ee5-49852f1736cd)
- ![image](https://github.com/oiviana/mks-products/assets/76710272/c2e4662b-7440-42f8-854e-5c08c42aede2)
- ![image](https://github.com/oiviana/mks-products/assets/76710272/1d8f01c6-c384-4f45-baed-449204329c2a)
+![Screenshot_4](https://github.com/oiviana/mks-products/assets/76710272/494c46b7-88b5-4628-a060-f21f72d25f13)
+![Screenshot_3](https://github.com/oiviana/mks-products/assets/76710272/41f00a79-eaef-4d0b-a886-83925740f361)
+![Screenshot_5](https://github.com/oiviana/mks-products/assets/76710272/5fad16b9-bd98-4636-923d-3a1aa1c00a89)
 
 
  # Deploy:
