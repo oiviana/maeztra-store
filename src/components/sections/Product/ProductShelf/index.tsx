@@ -119,8 +119,8 @@ export default function ProductShelf() {
     />
   ));
   return (
-    <div className="flex flex-col w-full max-w-[100rem] mx-auto relative px-1 lg:px-0">
-      <h2 className="text-primary-gray font-bold mx-auto my-4 lg:text-[32px/]">
+    <div className="flex flex-col w-full max-w-[100rem] mx-auto relative px-1 lg:px-0 my-10">
+      <h2 className="text-primary-gray font-bold mx-auto my-4 lg:text-[32px]">
         As Mais Pedidas
       </h2>
       <Slider {...sliderSettings}>{productsShelf}</Slider>
