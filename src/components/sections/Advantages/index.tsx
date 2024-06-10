@@ -15,7 +15,7 @@ export default function Advantages() {
   ));
 
   return (
-    <div className="overflow-hidden pl-2 flex flex-col gap-4 my-6">
+    <div className="overflow-hidden pl-2 flex flex-col gap-4 mt-6 mb-10">
       <h2 className="mx-auto text-base text-primary-gray font-bold">
         Por que comprar na Maeztra?
       </h2>
